@@ -3,7 +3,7 @@
 systemctl stop haproxy
 
 for i in {1..3}; do
-    echo "DESPLIEGUE DE LA PAGINA WEB $i"
+    echo "Despliegue de la página web $i"
     # Eliminar despliegue previo
     echo "Borrando despliegues anteriores..."
     microk8s.kubectl delete service web${i}-httpd
